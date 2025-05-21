@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --font-chivo: "Chivo", sans-serif; 
+
+  --color-secondary: #43E7DF;
+  --color-primary: #3639A4;
+  --color-headingColor: #2C2643;
+  --color-paraColor: #645E76;
+  --color-sectionColor: #F4FAFA;
+  --color-mixedColor: #645E76;
+  --color-saas:#43E7DF;
+}
+.slick-slider .slick-track, .slick-slider .slick-list {
+ border-radius: 20px;
+}
