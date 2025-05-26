@@ -25,14 +25,14 @@ export const Platform = () => {
     return (
         <Container>
             <div className='px-[60px]'>
-                <div className='pt-[336px] pb-[160px] flex justify-between'>
-                    <h3 className='w-[504px] text-headingColor font-chivo font-bold text-[46px] leading-[58px]'>How simple is it to use our platform?</h3>
-                    <p className='w-[530px] font-sans test-lg leading-8 text-paraColor'>This Innovate Con guide explores the most popular platforms and walks you through how to use them to grow your business.</p>
+                <div className='md:pt-[336px] pt-[80px] md:pb-[160px] pb-[40px] md:flex justify-between'>
+                    <h3 className='w-full] md:w-[504px] text-headingColor font-chivo font-bold md:text-[46px] text-[26px] md:leading-[58px] leading-[40px]'>How simple is it to use our platform?</h3>
+                    <p className='w-full md:w-[530px] font-sans md:text-lg text-[16px] md:leading-8 leading-7 mt-5 md:mt-0 text-paraColor'>This Innovate Con guide explores the most popular platforms and walks you through how to use them to grow your business.</p>
                 </div>
-                <div className='flex justify-between'>
+                <div className='md:flex justify-between'>
                     {
                         platformData.map((item) => (
-                            <div  className='w-[300px] text-center'>
+                            <div  className='w-auto md:w-[300px] text-center mt-10 md:mt-0'>
                                 <img className='m-auto' src={item.img} alt="" />
 
                                 <h4 className='text-headingColor font-chivo font-bold text-[24px] leading-9 mt-[26px] mb-3'>{item.title}</h4>

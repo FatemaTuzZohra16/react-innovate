@@ -9,27 +9,27 @@ export const Features = () => {
     return (
         <div>
             <Container>
-                <div className='mt-[160px] mb-[55px] flex justify-between'>
+                <div className='md:mt-[160px] mt-[80px] md:mb-[55px] mb-0 md:flex justify-between'>
                     <div>
                         <img src={features} alt="features" />
                     </div>
                     <div>
-                        <h3 className='w-[553px] font-chivo font-bold text-[46px] leading-[58px] text-headingColor'>We provide features for your Business</h3>
-                        <div className='flex justify-between mt-[64px] mb-10'>
-                            <div className='w-[220px] gap-[96px]'>
-                                <img src={features1} alt="" />
+                        <h3 className='w-auto md:w-[553px] font-chivo font-bold md:text-[46px] text-[30px] md:leading-[58px] leading-[40px] sm: text-center text-headingColor'>We provide features for your Business</h3>
+                        <div className='md:flex justify-between mt-[64px] mb-10 text-center md:text-left'>
+                            <div className='w-[220px] gap-[96px] mx-auto mb-5'>
+                                <img src={features1} alt="" className='mx-auto'/>
                                 <h4 className='font-chivo font-bold text-[22px] leading-[34px] text-headingColor mt-[14px] mb-[6px]'>Fast and Easy to use</h4>
                                 <p className='font-sans text-lg leading-8 text-paracolor'>Easily to convert API with just a few clicks</p>
                             </div>
-                            <div className='w-[220px] gap-[96px]'>
-                                <img src={features2} alt="" />
+                            <div className='w-[220px] gap-[96px] mx-auto'>
+                                <img src={features2} alt="" className='mx-auto'/>
                                 <h4 className='font-chivo font-bold text-[22px] leading-[34px] text-headingColor mt-[14px] mb-[6px]'>Safely Security</h4>
                                 <p className='font-sans text-lg leading-8 text-paracolor'>All customer data is encrypted</p>
                             </div>
                         </div>
-                        <div className='flex justify-between'>
-                        <div className='w-[220px] gap-[96px]'>
-                                <img src={features3} alt="" />
+                        <div className='md:flex justify-between text-center md:text-left'>
+                        <div className='w-[220px] gap-[96px] mx-auto'>
+                                <img src={features3} alt="" className='mx-auto'/>
                                 <h4 className='font-chivo font-bold text-[22px] leading-[34px] text-headingColor mt-[14px] mb-[6px]'>Get Organized</h4>
                                 <p className='font-sans text-lg leading-8 text-paracolor'>From lists to boards, organize work your way. </p>
                             </div>

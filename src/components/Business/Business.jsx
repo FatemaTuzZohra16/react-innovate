@@ -53,16 +53,15 @@ export const Business = () => {
         }
     ]
   return (
-    <div className='mb-[160px]'>
+    <div className='sm:w-auto md:mb-[160px] mb-[70px]'>
         <Container>
             <div className='text-center'>
-                <h2 className='w-[624px] mx-auto font-chivo font-bold text-[46px] leading-[58px]
-                text-headingColor'>Pricing Designed To Fit Your Business</h2>
-                <p className='font-chivo font-bold text-[24px] text-primary mt-[39px] mb-[77px]'>Monthly</p>
-                <div className='flex justify-between'>
+                <h2 className='w-auto md:w-[624px] mx-auto font-chivo font-bold md:text-[46px] text-[30px] md:leading-[58px] leading-[40px] text-headingColor'>Pricing Designed To Fit Your Business</h2>
+                <p className='font-chivo font-bold md:text-[24px] text-[20px] text-primary md:mt-[39px] mt-5 md:mb-[77px] mb-5'>Monthly</p>
+                <div className='md:flex justify-between'>
                     {
                         businessData.map((item)=>(
-                            <div className=' group w-[450px] py-10 px-[60px] hover:bg-primary border border-[#DCE7FE] rounded-[20px] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] transition-all ease-in-out duration-500'>
+                            <div className=' group w-auto md:w-[450px] py-10 px-[60px] hover:bg-primary border border-[#DCE7FE] rounded-[20px] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] transition-all ease-in-out duration-500 mb-5 md:mb-0'>
                                 <img className='m-auto' src={item.img} alt="" />
                                <h4 className='mt-8 mb-[2px] font-chivo font-bold text-2xl leading-9 text-primary group-hover:text-saas'>{item.subtitle}</h4> 
                                <h2 className='font-chivo font-bold text-[44px] leading-[54px] text-headingColor group-hover:text-white'>{item.title}</h2>
@@ -78,7 +77,7 @@ export const Business = () => {
                                 </li>
                             ))}
                                </ul>
-                              <div className='group-hover:bg-saas group-hover:text-headingColor bg-primary py-5 px-[100px] font-sans font-medium text-lg leading-5 text-white mt-[14px] rounded-[10px]'>
+                              <div className='group-hover:bg-saas group-hover:text-headingColor bg-primary md:py-5 py-4 md:px-[100px] px-[60px] font-sans font-medium md:text-lg text-[16px] leading-5 text-white mt-[14px] rounded-[10px]'>
                               <a href="">{item.button}</a>
                               </div>
 

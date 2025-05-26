@@ -1,30 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../assets/logo.png'
 import Container from '../Layout/Container'
+import { FaBars } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 
 const Navbar = () => {
+    const [show, setshow] = useState(false)
+    const handleClick = ()=>{
+        setshow(true);
+        
+    }
     return (
         <div className='pt-[32px]'>
             <Container>
-                <div className='flex justify-between items-center'>
-                    <div>
+                <div className='md:flex justify-between items-center'>
+                    <div className='flex items-center justify-between'>
                         <img src={logo} alt="logo" />
+                        <div onClick={handleClick} className='block md:hidden text-2xl text-white'>
+                            <FaBars />
+                        </div>
                     </div>
                     <div>
-                        <ul className='flex gap-[50px] text-white font-sans text-lg font-medium hover:text-black'>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Features</a></li>
-                            <li><a href="">Service</a></li>
-                            <li><a href="">Pages</a></li>
-                            <li><a href="">Blog</a></li>
+                        <ul className='hidden md:flex gap-[50px] text-white font-sans text-lg font-medium'>
+                            <li><a className=' hover:text-black' href="">Home</a></li>
+                            <li><a className=' hover:text-black' href="">Features</a></li>
+                            <li><a className=' hover:text-black' href="">Service</a></li>
+                            <li><a className=' hover:text-black' href="">Pages</a></li>
+                            <li><a className=' hover:text-black' href="">Blog</a></li>
                         </ul>
                     </div>
-                    <div className='flex items-center gap-x-9'>
+                    <div className='hidden md:flex items-center gap-x-9'>
                         <a className='text-white font-sans text-lg font-medium' href="">Login</a>
                         <a className='text-black font-sans text-lg font-medium py-5 px-12 bg-secondary rounded-[6px]' href="">Register</a>
                     </div>
                 </div>
             </Container>
+            {
+        show &&
+            <div className='md:flex justify-between items-center bg-[#1166F4] text-center shadow-[4px_4px_4px_4px_rgba(255,255,255,0.5)] relative'>
+                <div onClick={()=>setshow(false)} className='text-2xl text-white'>
+                <ImCross className='flex items-center justify-center absolute top-[50%] left-10' />
+                </div>
+                <div>
+                    <ul className='md:flex gap-[50px] text-white font-sans text-lg font-medium'>
+                        <li className='mb-5 hover:text-black'><a href="">Home</a></li>
+                        <li className='mb-5 hover:text-black'><a href="">Features</a></li>
+                        <li className='mb-5 hover:text-black'><a href="">Service</a></li>
+                        <li className='mb-5 hover:text-black'><a href="">Pages</a></li>
+                        <li className='mb-5 hover:text-black'><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div className='flex flex-col items-center gap-x-9'>
+                    <a className='text-white font-sans text-lg font-medium mb-5' href="">Login</a>
+                    <a className='text-black font-sans text-lg font-medium py-2 px-9 bg-secondary rounded-[6px] mb-5' href="">Register</a>
+                </div>
+            </div>
+    }
         </div>
     )
 }
