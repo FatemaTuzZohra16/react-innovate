@@ -13,23 +13,25 @@ export const Footer = () => {
             <Container>
                <div>
                <div className='relative pb-[30px]'>
-                    <div className='absolute top-[-150px] w-full' style={{
+                    <div className='absolute top-[-150px] w-full mb-[30px] md:mb-0' style={{
                         backgroundImage: `url(${footerBg})`,
                         backgroundRepeat: `no-repeat`,
+                        backgroundPosition:`center`,
+                        borderRadius:`40px`,
                         backgroundSize:`cover`,
                     }}> 
                        <div className='md:flex justify-between items-center md:px-[102px] px-[20px] py-[100px] text-center md:text-left'>
                             <div className='text-white'>
-                                <h2 className='w-auto md:w-[577px] font-chivo font-bold md:text-[46px] text-[37px] md:leading-[58px] leading-[47px] mb-[37px] md:mb-0'>Don’t find the answer? contact us for any query.</h2>
+                                <h2 className='w-auto md:w-[577px] font-chivo font-bold md:text-[46px] sm:text-[43px] text-[37px] sm:leading-[58px] leading-[47px] mb-[37px] md:mb-0'>Don’t find the answer? contact us for any query.</h2>
                             </div>
                             <div>
-                                <a className='font-sans font-medium md:text-lg text-[16px] leading-5 text-headingColor bg-secondary md:py-5 py-4 md:px-[48px] px-[20px] rounded-[6px]' href="#">Contact Us</a>
+                                <a className='font-sans font-medium sm:text-lg text-[16px] leading-5 text-headingColor bg-secondary sm:py-5 py-4 sm:px-[48px] px-[20px] rounded-[6px]' href="#">Contact Us</a>
                             </div>
                         </div>                     
                     </div>
-                    <div className='main pt-[291px] pb-[86px] md:flex justify-between'>
-                        <div className="w-[263px] logo text-center md:text-left m-auto mb-[40px] md:mb-0">
-                            <img src={footerlogo} alt="footerlogo"  className='m-auto'/>
+                    <div className='main pt-[291px] pb-[86px] sm:flex flex-wrap justify-between text-start'>
+                        <div className="w-[263px] logo text-center md:text-left mx-auto md:mx-0 mb-[40px] md:mb-0 lg:mt-0">
+                            <img src={footerlogo} alt="footerlogo"  className='md:m-0 m-auto'/>
                             <p className='font-sans text-[16px] leading-[28px] text-paraColor mt-[26px] mb-6'>Build a modern and creative website with Innovate.</p>
                             <div className="icons w-[185px] flex gap-[6px] ml-[43px] md:ml-0">
                                 <div className='w-[42px] h-[42px] rounded-full bg-[#EEEEEE] items-center flex justify-center'><FaGoogle className='text-[16px] text-paraColor' /></div>
@@ -38,7 +40,7 @@ export const Footer = () => {
                                 <div className='w-[42px] h-[42px] rounded-full bg-[#EEEEEE] items-center flex justify-center'><FaLinkedin className='text-[16px] text-paraColor' /></div>
                             </div>
                         </div>
-                        <div className="flex mb-[30px] md:mb-0">
+                        <div className="flex mb-[30px] md:mb-0 sm:mx-auto md:m-0">
                             <div className='w-[103px] md:mr-[86px] mr-[40px]'>
                                 <h3 className='mb-5 font-sans font-medium text-lg leading-8 text-headingColor'>Product</h3>
                                 <p className='mb-3 font-sans text-[16px] leading-[26px] text-paraColor'>Landingpages</p>
@@ -62,7 +64,7 @@ export const Footer = () => {
                                 <p className='mb-3 font-sans text-[16px] leading-[26px] text-paraColor'>Support</p>
                             </div>
                         </div>
-                        <div className="input w-[285px] text-center md:text-left m-auto mb-[40px] md:mb-0">
+                        <div className="input w-[285px] text-center md:text-left mx-auto md:mx-0 mb-[40px] lg:mb-0 md:mt-[30px] lg:mt-0">
                             <h2 className='font-sans font-medium text-lg leading-8 text-headingColor'>Get Latest Updates</h2>
                             <p className='font-sans text-[16px] leading-[26px] text-paraColor pt-[18px] pb-[32px]'>Subscribe to our newsletter and get many interesting things every week</p>
                             <div className='w-[269px] border-2 border-[#D2D2D2] rounded-[5px] relative'>
@@ -73,7 +75,7 @@ export const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <p className='font-inter text-lg leading-5 pt-6 text-paraColor border-t-4 border-[#D2D2D2]'>© 2024 Innovate - All Right Reserved</p>
+                    <p className='font-inter text-lg leading-5 pt-6 text-paraColor border-t-4 border-[#D2D2D2] '>© 2024 Innovate - All Right Reserved</p>
                 </div>
                </div>
             </Container>

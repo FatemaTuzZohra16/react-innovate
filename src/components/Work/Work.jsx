@@ -38,9 +38,9 @@ export const Work = () => {
                 <div>
                     <div className='text-center md:mb-20 mb-10'>
                         <h6 className='font-sans font-medium text-5 text-[#FF7364]'>Our Services</h6>
-                        <h3 className='font-chivo font-bold md:text-[46px] text-[30px] md:leading-[58px] leading-[40px] text-headingColor mt-1'>How It Works</h3>
+                        <h3 className='font-chivo font-bold md:text-[46px] sm:text-[40px] text-[30px] md:leading-[58px] sm:leading-[50px] leading-[40px] text-headingColor mt-1'>How It Works</h3>
                     </div>
-                    <div className='md:flex justify-between transition-all ease-in-out duration-500 text-center md:text-left'>
+                    <div className='sm:flex justify-between sm:flex-wrap lg:flex-nowrap transition-all ease-in-out duration-500 text-center md:text-left gap-y-6 md:gap-x-[2px] lg:gap-[20px] xl:gap-0 md:px-[140px] lg:px-0'>
                         {
                             workData.map((item)=>(
                                 <div className=' group w-[330px] border border-[#DCE7FE] rounded-[10px] p-9 hover:bg-primary'>

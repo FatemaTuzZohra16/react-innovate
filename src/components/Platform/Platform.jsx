@@ -25,11 +25,11 @@ export const Platform = () => {
     return (
         <Container>
             <div className='px-[60px]'>
-                <div className='md:pt-[336px] pt-[80px] md:pb-[160px] pb-[40px] md:flex justify-between'>
-                    <h3 className='w-full] md:w-[504px] text-headingColor font-chivo font-bold md:text-[46px] text-[26px] md:leading-[58px] leading-[40px]'>How simple is it to use our platform?</h3>
-                    <p className='w-full md:w-[530px] font-sans md:text-lg text-[16px] md:leading-8 leading-7 mt-5 md:mt-0 text-paraColor'>This Innovate Con guide explores the most popular platforms and walks you through how to use them to grow your business.</p>
+                <div className='md:pt-[336px] pt-[80px] md:pb-[160px] pb-[40px] md:flex justify-between text-center md:text-left'>
+                    <h3 className='w-full] md:w-[504px] text-headingColor font-chivo font-bold lg:text-[46px] md:text-[44px] sm:text-[40px] text-[26px] md:leading-[58px] sm:leading-[40px] leading-[40px]'>How simple is it to use our platform?</h3>
+                    <p className='w-full md:w-[530px] font-sans lg:text-lg text-[16px] md:leading-8 leading-7 mt-5 md:mt-0 text-paraColor'>This Innovate Con guide explores the most popular platforms and walks you through how to use them to grow your business.</p>
                 </div>
-                <div className='md:flex justify-between'>
+                 <div className='md:flex md:gap-[40px] lg:gap-0 justify-between'>
                     {
                         platformData.map((item) => (
                             <div  className='w-auto md:w-[300px] text-center mt-10 md:mt-0'>

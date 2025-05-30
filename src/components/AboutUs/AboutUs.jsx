@@ -7,11 +7,11 @@ export const AboutUs = () => {
   return (
     <section className='md:py-[200px] py-[80px] bg-sectionColor'>
       <Container>
-        <div className='md:flex justify-between'>
-          <div className='w-auto md:w-[594px] text-center md:text-left mb-7 md:mb-0'>
-            <h2 className='font-chivo font-bold md:text-[46px] text-[30px] md:leading-[58px] leading-[40px] text-paraColor'>What they are talking
+        <div className='md:flex justify-between sm:text-center gap-[35px] lg:gap-[65px]'>
+          <div className='w-auto lg:w-[594px] text-center sm:text-left mb-7 md:mb-0'>
+            <h2 className='font-chivo font-bold lg:text-[46px] sm:text-[43px] text-[30px] sm:leading-[58px] leading-[40px] text-paraColor'>What they are talking
               about us?</h2>
-            <p className='font-sans md:text-lg text-[16px] leading-8 text-paraColor mt-[20px] mb-[40px]'>testimonials are evidence of customers talking about your product or service in their own words. At their best, they are authentic, descriptive.</p>
+            <p className='font-sans sm:text-lg text-[16px] leading-8 text-paraColor mt-[20px] mb-[40px]'>testimonials are evidence of customers talking about your product or service in their own words. At their best, they are authentic, descriptive.</p>
             <a className='font-sans text-lg font-medium py-5 px-12 bg-primary rounded-[6px] text-white' href="">Get Started</a>
             <div className='flex w-[350px] items-center'>
               <div className='w-[163px] flex mt-[85px] relative mr-[5px]'>

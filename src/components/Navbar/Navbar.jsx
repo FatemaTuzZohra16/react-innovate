@@ -37,12 +37,12 @@ const Navbar = () => {
             </Container>
             {
         show &&
-            <div className='md:flex justify-between items-center bg-[#1166F4] text-center shadow-[4px_4px_4px_4px_rgba(255,255,255,0.5)] relative'>
+            <div className='lg:flex justify-between items-center bg-[#1166F4] text-center shadow-[4px_4px_4px_4px_rgba(255,255,255,0.5)] relative'>
                 <div onClick={()=>setshow(false)} className='text-2xl text-white'>
                 <ImCross className='flex items-center justify-center absolute top-[50%] left-10' />
                 </div>
                 <div>
-                    <ul className='md:flex gap-[50px] text-white font-sans text-lg font-medium'>
+                    <ul className='lg:flex gap-[50px] text-white font-sans text-lg font-medium'>
                         <li className='mb-5 hover:text-black'><a href="">Home</a></li>
                         <li className='mb-5 hover:text-black'><a href="">Features</a></li>
                         <li className='mb-5 hover:text-black'><a href="">Service</a></li>
