@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../../assets/logo.png'
 import Container from '../Layout/Container'
 import { FaBars } from "react-icons/fa";
@@ -6,14 +6,27 @@ import { ImCross } from "react-icons/im";
 
 const Navbar = () => {
     const [show, setshow] = useState(false)
+    const [navScroll, setnavScroll] = useState(false)
     const handleClick = ()=>{
         setshow(true);
         
     }
+    useEffect(()=>{
+        function scrollFunction() {
+            if(window.scrollY > 200){
+                setnavScroll(true)
+                
+            }else{
+                setnavScroll(false)
+            }
+        }
+        window.addEventListener("scroll", scrollFunction)
+    }, [])
     return (
         <div className='pt-[32px]'>
+                <div className={`md:flex ${navScroll ? "fixed bg-blue-950/10 z-30 transition duration-300 shadow-lg" : "absolute"} top-0 left-0 w-full justify-between items-center`}>
             <Container>
-                <div className='md:flex justify-between items-center'>
+                    <div className='md:flex items-center justify-between'>
                     <div className='flex items-center justify-between'>
                         <img src={logo} alt="logo" />
                         <div onClick={handleClick} className='block md:hidden text-2xl text-white'>
@@ -33,8 +46,9 @@ const Navbar = () => {
                         <a className='text-white font-sans text-lg font-medium' href="">Login</a>
                         <a className='text-black font-sans text-lg font-medium py-5 px-12 bg-secondary rounded-[6px]' href="">Register</a>
                     </div>
-                </div>
+                    </div>
             </Container>
+                </div>
             {
         show &&
             <div className='lg:flex justify-between items-center bg-[#1166F4] text-center shadow-[4px_4px_4px_4px_rgba(255,255,255,0.5)] relative'>
