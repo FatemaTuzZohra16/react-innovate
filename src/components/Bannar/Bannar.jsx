@@ -16,8 +16,8 @@ const Bannar = () => {
             <a className='absolute top-[10px] md:top-[3px] right-[10px] sm:right-[135px] md:right-[264px] lg:right-[391px] xl:right-[472px] text-black font-sans text-lg font-medium py-2 md:py-[15px] px-7 bg-secondary rounded-[6px]' href="">Try for free</a>
             </div>
         </div>
-        <div className='md:mt-[220px] mt-[100px]'>
-            <img src={bannar1} alt="bannar1" />
+        <div className='absolute w-full max-w-[1200px] top-[305px] md:top-[390px] lg:top-[500px] left-1/2 -translate-x-1/2'>
+            <img className='h-auto mx-auto' src={bannar1} alt="bannar1" />
         </div>
     </div>
     </Container>
