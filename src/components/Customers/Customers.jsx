@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../Layout/Container'
-import Customersbg from '../../assets/Customersbg.png'
+import customersbg from '../../assets/customersbg.png'
 
 export const Customers = ({ children }) => {
     const customerData = [
@@ -23,7 +23,7 @@ export const Customers = ({ children }) => {
             <Container>
                 <div
                     style={{
-                        backgroundImage: `url(${Customersbg})`,
+                        backgroundImage: `url(${customersbg})`,
                         backgroundRepeat: 'no-repeat',
                         backgroundSize: 'cover',
                         borderRadius: '50px'
