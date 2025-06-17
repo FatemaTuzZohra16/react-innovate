@@ -22,5 +22,5 @@ Built with **React**, **Tailwind CSS**, and designed for performance and clarity
 - README.md : Project documentation
 - package.json : Project metadata and dependencies
 
-- ## Live Link
-- react-innovate-tbrp.vercel.app
+- ## Live Demo
+-Link [http://react-innovate-tbrp.vercel.app]
