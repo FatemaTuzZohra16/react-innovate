@@ -23,5 +23,6 @@ Built with **React**, **Tailwind CSS**, and designed for performance and clarity
 - package.json : Project metadata and dependencies
 
 - ## Live Demo
- 🔗 Live Link: react-innovate-38tc.vercel.app
+ 🔗 Live Link: [react-innovate-38tc.vercel.app](https://react-innovate-38tc.vercel.app)
+
 
