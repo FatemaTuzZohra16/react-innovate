@@ -23,4 +23,5 @@ Built with **React**, **Tailwind CSS**, and designed for performance and clarity
 - package.json : Project metadata and dependencies
 
 - ## Live Demo
- 🔗 Live Link: [http://react-innovate-tbrp.vercel.app]
+ 🔗 Live Link: react-innovate-38tc.vercel.app
+
